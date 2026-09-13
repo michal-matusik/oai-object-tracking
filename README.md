@@ -6,6 +6,10 @@ It is not the author's original competition submission.
 The task supplied detected cup bounding boxes for every frame and asked for the final left-to-right identity order after a sequence of swaps.
 The implementation uses motion-aware bipartite association: it predicts each track's next center from its velocity, assigns detections globally with an exhaustive minimum-cost permutation for three objects, and reports track identities ordered by final horizontal position.
 
+![Three-cup tracking task illustration](assets/task-cup-tracking.png)
+
+*Task illustration from the official Polish AI Olympiad I notebook.*
+
 ## Quick start
 
 `python -m unittest discover -s tests -v`
